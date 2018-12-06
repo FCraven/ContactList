@@ -14,7 +14,7 @@ const ContactList = (props) => {
               </tr>
                 {contacts.map(contact => {
                   return (
-                    <ContactRow key={contact.id} contact={contact} />
+                    <ContactRow selectContact={props.selectContact} key={contact.id} contact={contact} />
                   )
                 })}
             </tbody>

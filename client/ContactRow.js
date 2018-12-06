@@ -3,7 +3,7 @@ import React from 'react'
 const ContactRow = (props) => {
   const contact = props.contact
   return(
-    <tr>
+    <tr onClick={()=> props.selectContact(contact.id)}>
       <th>{contact.name}</th>
       <th>{contact.phone}</th>
       <th>{contact.email}</th>
@@ -12,3 +12,4 @@ const ContactRow = (props) => {
 }
 
 export default ContactRow
+
